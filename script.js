@@ -21,7 +21,7 @@ function btnEncriptar() {
         const textoEncriptado = encriptar(textArea.value);
         mensaje.value = textoEncriptado
         mensaje.style.backgroundImage = "none";
-        textArea.value = " ";
+        textArea.value = "";
         copia.style.display = "block"
     }
 }
@@ -48,7 +48,7 @@ function encriptar(stringEncriptada) {
 function btnDesencriptar() {
     const textoEncriptado = desencriptar(textArea.value);
     mensaje.value = textoEncriptado;
-    textArea.value = " ";
+    textArea.value = "";
 }
 
 function desencriptar(stringDesencriptada) {
